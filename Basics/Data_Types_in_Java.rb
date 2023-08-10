@@ -19,7 +19,14 @@ String: A sequence of characters. Though a reference type, its commonly used and
 Its important to note that primitive data types are stored directly in memory, while reference data types store references (memory addresses) to the actual data stored elsewhere in memory.
 
 
+FOCUS ON THIS ONE MOSTSLY, AS THEY ARE TH ONES USED MOST
+    ----------------------------------------------------------------------------------------------------
 
+    boolean Name = true;
+    int popualtion = 4555555;
+    char grade = 'A';
+    double  pi = 3.145555;
+    String  name = "George"; 
 
 
 
