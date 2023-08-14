@@ -14,4 +14,16 @@ Given this information, if you're looking for a JDK to use, you generally have t
 - Use Oracle OpenJDK builds: These are also free and offer features similar to Oracle JDK.
 - Explore alternative distributions like AdoptOpenJDK or Amazon Corretto: These are also free and may provide additional benefits.
 
-However, please note that the situation might have changed since my last update in September 2021. It's always a good idea to check the latest information on the official websites of Oracle, OpenJDK, and other JDK distributors to ensure you have the most up-to-date information regarding licensing and usage terms.
+However, please note that the situation might have changed since my last update in September 2021. Its always a good idea to check the latest information on the official websites of Oracle, OpenJDK, and other JDK distributors to ensure you have the most up-to-date information regarding licensing and usage terms.
+
+
+
+  ------------------------------------------
+
+  Yes, youre correct. The Java programming language itself is free to use. However, to develop and run Java applications, you need a Java Development Kit (JDK), which provides the necessary tools, libraries, and runtime environment. There are two main options for JDK implementations:
+
+OpenJDK:
+OpenJDK is an open-source implementation of the Java SE platform. It provides the core Java libraries, tools, and runtime environment.
+OpenJDK is licensed under the GNU General Public License, version 2, with the Classpath Exception (GPLv2+CE). This license
+
+
