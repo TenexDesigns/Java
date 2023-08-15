@@ -39,4 +39,65 @@ Records are particularly useful for simple data-holding classes, where the focus
 
 
 
+
+
+
+  
+The equals(), hashCode(), and toString() methods 
+  --------------------------------------------------------------------------------------------------------------------------------
+
+
+  The `equals()`, `hashCode()`, and `toString()` methods are fundamental methods in Java that are commonly overridden in classes to define the behavior of object comparison, hashing, and string representation. These methods are part of the `Object` class, which is the superclass for all Java classes. When you create your own classes, it's often important to provide meaningful implementations for these methods based on your class's characteristics and requirements.
+
+1. **equals() Method:**
+   The `equals()` method is used to compare objects for equality. By default, it compares object references (memory addresses). However, it's common to override this method in your classes to compare the actual contents of the objects.
+
+   Example of overriding `equals()`:
+
+   ```java
+   @Override
+   public boolean equals(Object obj) {
+       if (this == obj) return true;
+       if (obj == null || getClass() != obj.getClass()) return false;
+       MyClass myObj = (MyClass) obj;
+       return field1 == myObj.field1 && field2.equals(myObj.field2);
+   }
+   ```
+
+2. **hashCode() Method:**
+   The `hashCode()` method returns an integer that represents the value of an object. This integer is used as an index in data structures like hash tables. It's important to override `hashCode()` consistently with the `equals()` method to ensure that equal objects produce the same hash code.
+
+   Example of overriding `hashCode()`:
+
+   ```java
+   @Override
+   public int hashCode() {
+       return Objects.hash(field1, field2);
+   }
+   ```
+
+3. **toString() Method:**
+   The `toString()` method returns a string representation of an object. This is often used for debugging or when you want to display an object's information.
+
+   Example of overriding `toString()`:
+
+   ```java
+   @Override
+   public String toString() {
+       return "MyClass{" +
+               "field1=" + field1 +
+               ", field2='" + field2 + '\'' +
+               '}';
+   }
+   ```
+
+When overriding these methods, remember:
+
+- `equals()` should be reflexive, symmetric, transitive, and consistent.
+- `hashCode()` should be consistent with `equals()`.
+- `toString()` should provide a clear and concise representation of the object's state.
+
+Modern IDEs like IntelliJ IDEA or Eclipse can generate these methods for you based on the fields of your class. This ensures that you follow best practices and maintain correctness and consistency in your implementations.
+
+
   
