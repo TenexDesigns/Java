@@ -1,4 +1,6 @@
-Polymorphism is a core concept in object-oriented programming that allows objects of different classes to be treated as objects of a common superclass. It enables you to write code that can work with objects of various classes in a consistent way, promoting flexibility and code reuse. Polymorphism is one of the key features of inheritance and interfaces.
+Polymorphism is a core concept in object-oriented programming that allows objects of different classes to be treated as objects of a common superclass.
+   It enables you to write code that can work with objects of various classes in a consistent way, promoting flexibility and code reuse.
+   Polymorphism is one of the key features of inheritance and interfaces.
 
 There are two main types of polymorphism in Java: compile-time (method overloading) and runtime (method overriding). Here's a breakdown of each type:
 
