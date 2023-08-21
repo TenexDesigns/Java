@@ -13,6 +13,8 @@ Sure, here are some commonly used methods available in the Java Stream API, alon
 
 2. **`map(Function<T, R> mapper)`:**
    Transforms each element of the stream using the given mapper function.
+   It replaces the stream valies with the values produces afetr excution of the map methods
+   e.g In this case, the stream values are all replaced by new stream values which are now in uppercase.
 
    ```java
    List<String> upperCaseNames = names.stream()
