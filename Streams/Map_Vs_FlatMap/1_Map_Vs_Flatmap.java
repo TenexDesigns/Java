@@ -15,6 +15,7 @@ List<String> upperCaseWords = words.stream()
 **2. `flatMap` Operation:**
 It is Used when you have a stream of collections or streams and you want to combine them into a single stream. e.g [[1,2,3],[4,5,6]] then use flatmap to convet it to one stream -> [1,2,3,4,5,6]
 Remembert to use the second .stream method to flatten the array or stream of streams
+  Flatmap allows you to work with sream of streams, where within the flatmap method you ave access to the sreams making up the outer stream, and you can do computaions on this inner sreams inside the flatmapmethod e.g  [[1,2,3],[4,5,6]] , inside the flatmap method you have access to the  [1,2,3]and [4,5,6] streams and you can do computation on them 
   
 The `flatMap` operation is used when each element of a stream is transformed into multiple elements, possibly from a nested structure (like a nested list or another stream). It performs a one-to-many transformation and "flattens" the results into a single stream.
 
