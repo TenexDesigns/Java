@@ -63,6 +63,8 @@ Certainly, I'll provide you with brief explanations and code samples for each of
     ```
 
 13. **`map(Function<? super T, ? extends R> mapper)`**: Transforms each element using the provided function.
+      It replaces the stream valies with the values produces afetr excution of the map methods
+   e.g In this case, the stream values are all replaced by new stream values which are now in uppercase.
     ```java
     Stream<String> mappedStream = stream.map(String::toUpperCase);
     ```
