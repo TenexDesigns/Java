@@ -1,3 +1,15 @@
+ **Dividing Tasks Among Threads:**
+   Multithreading can involve both scenarios you described. It can be used to divide different tasks among different threads (parallelism) and also to divide a single task into smaller subtasks executed by different threads (concurrency).
+
+   - **Parallelism:** In the case of multiple threads performing different tasks, each thread handles a distinct task simultaneously. For example, one thread performs calculations while another prints messages.
+
+   - **Concurrency:** In the case of dividing a single task among different threads, the task is split into smaller subtasks that are executed concurrently. For instance, if you want to count from 1 to 1000 using multiple threads, you can divide the range among threads, and each thread counts a portion of the range concurrently.
+
+
+
+
+
+
 Certainly, I can guide you through implementing both parallelism and concurrency using threads or multithreading in Java using the two approaches you mentioned: implementing the `Runnable` interface and using the `ExecutorService` framework.
 
 **1. Implementing Parallelism and Concurrency using Runnable Interface:**
